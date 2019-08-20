@@ -6,7 +6,7 @@
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-        xs: 482,
+        xs: 480,
         sm: 768px,
         md: 1024px,
         lg: 1330px,
@@ -22,20 +22,21 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-        sm: 693px,
-        md: 994px,
-        lg: 1081px,
-        xl: 1419px
+        sm: 768px,
+        md: 1024px,
+        lg: 1170px,
+        xl: 1170px
 );
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
-
 // Grid columns
-//
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12;
-$grid-gutter-width:           24px;
-
+$grid-gutter-width:           30px;
 $enable-grid-classes:       true;
+
+.container{
+  padding: 0 !important;
+}
