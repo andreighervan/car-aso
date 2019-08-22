@@ -4,15 +4,11 @@
   &__top {
     background: $gray-color-text;
     .flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-center;
       height: 5rem;
     }
     &--left {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-center;
     }
     &--right {
       select {
@@ -25,6 +21,7 @@
         -moz-appearance: none;
         appearance: none;
         font-size: 1.4rem;
+        cursor: pointer;
       }
     }
     &--box {
@@ -86,9 +83,7 @@
     &--logo {
     }
     .flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-center;
       height: 8rem;
     }
   }
