@@ -38,20 +38,36 @@
   &__heading--rate {
     font-size: 5.6rem;
     line-height: 1.7rem;
+    margin:2rem 0;
+    span{
+      color:$orange-color-text;
+    }
   }
   &__btn {
     font-size: 1.8rem;
     line-height: 1.7rem;
+    color: $color-white;
+    background: $gray-color-text;
+    transform: skew(10deg);
+    border: none;
+    outline: none;
+    padding:1rem 1.5rem;
+     i {
+      color: $orange-color-text;
+    }
   }
 }
 
 .skewDiv {
   transform: skew(-29deg);
 }
-
-.carousel-control-prev {
-  left: -5%;
-}
-.carousel-control-next {
-  right: -5%;
+mdb-carousel {
+  .carousel {
+    a.carousel-control-prev {
+      left: -5% !important;
+    }
+    .carousel-control-next {
+      right: -5%;
+    }
+  }
 }
