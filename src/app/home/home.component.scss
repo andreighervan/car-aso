@@ -1,4 +1,57 @@
-.container{
-    height: 50px;
-    background: blue;
+@import "../../styles/main.scss";
+
+.slider {
+  mdb-carousel-item {
+    height: 79vh;
+    .carousel-caption {
+      left: 8%;
+      top: 50%;
+      bottom: 0;
+      padding: 0;
+      text-align: left;
+      transform: translateY(-50%);
+    }
+  }
+  h1,
+  h2 {
+    font-family: ProximaNovaBold, sans-serif;
+  }
+  &__heading--new {
+    font-size: 1.8rem;
+  }
+  &__heading--price {
+    font-size: 6rem;
+    line-height: 5.4rem;
+  }
+  &__heading--car {
+    font-size: 6rem;
+    background: $color-white;
+    color: $orange-color-text;
+    padding: 0 1rem;
+    display: block;
+    transform: skew(10deg);
+    span {
+      color: $gray-color-text;
+      line-height: 5.4rem;
+    }
+  }
+  &__heading--rate {
+    font-size: 5.6rem;
+    line-height: 1.7rem;
+  }
+  &__btn {
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+  }
+}
+
+.skewDiv {
+  transform: skew(-29deg);
+}
+
+.carousel-control-prev {
+  left: -5%;
+}
+.carousel-control-next {
+  right: -5%;
 }
