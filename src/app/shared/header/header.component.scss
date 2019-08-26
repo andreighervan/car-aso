@@ -5,7 +5,7 @@
     background: $gray-color-text;
     .flex {
       @include flex-center;
-      height: 5rem;
+      min-height: 5rem;
     }
     &--left {
       @include flex-center;
@@ -83,11 +83,9 @@
         }
       }
     }
-    &--logo {
-    }
     .flex {
       @include flex-center;
-      height: 8rem;
+      min-height: 8rem;
     }
   }
 }

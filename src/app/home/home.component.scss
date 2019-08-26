@@ -75,7 +75,7 @@ mdb-carousel {
 
 .search{
   background: $gray-color-text;
-  padding: 6rem 0;
+  padding: 6rem 0 4.5rem 0;
   &__heading{
      color:$color-white;
      span{
@@ -106,6 +106,7 @@ mdb-carousel {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    cursor: pointer;
     &:focus{
       outline: none;
     }
