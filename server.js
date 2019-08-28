@@ -12,11 +12,11 @@ mongoose.connect('mongodb://andreighervan:123QQsuccess@ds017165.mlab.com:17165/c
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(function (req, res) {
+app.use((req, res)=>{
     res.status(404).send({ url: req.originalUrl + ' not found' })
 });
 
-var routes = require('./api/routes/carRoutes'); //importing route
+const routes = require('./api/routes/carRoutes'); //importing route
 routes(app); //register the route
 
 app.listen(port);
