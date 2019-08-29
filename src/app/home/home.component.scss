@@ -126,6 +126,7 @@ mdb-carousel {
       color: $orange-color-text;
     }
   }
+
   .car {
     h4.heading--price {
       position: absolute;
@@ -160,5 +161,27 @@ mdb-carousel {
         margin-left: 6rem;
       }
     }
+    .w-270{
+      width: 27rem;
+    }
+  }
+  .btn-show-all{
+    border:1px solid $gray-color-text;
+    background: $color-white;
+    padding: 1.5rem 4rem;
+    border-radius: 4px;
+    line-height: 1;
+    margin-top:4rem;
+    i{
+      color:$orange-color-text;
+      font-size: 1.4rem;
+    }
+    &:focus{
+      outline: none;
+    }
+    &:hover{
+      background: darken($color-white, 10%);
+    }
   }
 }
+
