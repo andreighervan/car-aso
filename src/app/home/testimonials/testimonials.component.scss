@@ -13,6 +13,30 @@
         color: $color-white;
       }
     }
+    p.paragraph {
+      margin-top: 1rem;
+    }
+    .choose-us-container {
+      .choose-us {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 2rem;
+        img {
+          margin-right: 2rem;
+        }
+        .choose-us-content {
+          flex: 1;
+        }
+      }
+      h5.choose-heading {
+        color: $gray-color-text;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        span {
+          color: $color-white;
+        }
+      }
+    }
   }
   .right-ts {
     padding: 5rem 0;
@@ -23,6 +47,39 @@
       color: $orange-color-text;
       span {
         color: $color-white;
+      }
+    }
+    .testimonial {
+      border: 1px solid $orange-color-text;
+      border-radius: 3px;
+      padding: 3rem;
+      margin-bottom: 3rem;
+      width: 88%;
+      p.paragraph {
+        color: $color-white;
+        font-style: italic;
+        font-size: 1.6rem;
+        font-family: OpenSansRegular, Arial, Helvetica, sans-serif;
+      }
+      .testimonial-footer {
+        display: flex;
+        align-items: flex-start;
+        margin-top:1.5rem;
+        img{
+          margin-right: 1rem;
+        }
+        .author {
+          p {
+            font-family: ProximaNovaBold, Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            &.p--primary {
+              color: $color-white;
+            }
+            &.p--secondary {
+              color: $orange-color-text;
+            }
+          }
+        }
       }
     }
   }
