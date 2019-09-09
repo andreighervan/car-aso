@@ -17,7 +17,7 @@ app.use((req, res)=>{
 });
 
 const routes = require('./api/routes/carRoutes'); //importing route
-routes(app); //register the route
+routes(app); 
 
 app.listen(port);
 
